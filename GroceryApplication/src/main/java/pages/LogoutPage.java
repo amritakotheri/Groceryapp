@@ -7,29 +7,28 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LogoutPage {
 	public WebDriver driver;
-	@FindBy(xpath="//a[@data-toggle='dropdown']")WebElement admin;
-	@FindBy(xpath="//a[ @href='https://groceryapp.uniqassosiates.com/admin/logout' and @class='dropdown-item']")WebElement logout;
-	@FindBy(xpath="//button[@type='submit']")WebElement signin;
+	@FindBy(xpath = "//a[@data-toggle='dropdown']")
+	WebElement admin;
+	@FindBy(xpath = "//i[@class='ace-icon fa fa-power-off']")
+	WebElement logout;
+	@FindBy(xpath = "//button[@type='submit']")
+	WebElement signin;
 
-	
-	
-	
-	public LogoutPage(WebDriver driver) 
-	{
-		this.driver=driver;
+	public LogoutPage(WebDriver driver) {
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-	public void clickOnAdmin()
-	{
+
+	public void clickOnAdmin() {
 		admin.click();
 	}
-	public void clickOnNewLogout()
-	{
+
+	public void clickOnNewLogout() {
 		logout.click();
 	}
-	public boolean isSignInDisplayed()
-	{
+
+	public boolean isSignInDisplayed() {
 		return logout.isDisplayed();
-		
+
 	}
 }
