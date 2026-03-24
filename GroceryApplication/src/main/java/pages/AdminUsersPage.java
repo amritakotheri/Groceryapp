@@ -10,8 +10,8 @@ import utilities.PageUtility;
 
 public class AdminUsersPage {
 	public WebDriver driver;
-	@FindBy(xpath = "//a[@href='https://groceryapp.uniqassosiates.com/admin/list-admin' and @class='small-box-footer']")
-	WebElement adminuserinfo;
+//	@FindBy(xpath = "//a[@href='https://groceryapp.uniqassosiates.com/admin/list-admin' and @class='small-box-footer']")
+//	WebElement adminuserinfo;
 	@FindBy(xpath = "//a[@onclick='click_button(1)']")
 	WebElement newbutton;
 	@FindBy(xpath = "//input[@id='username']")
@@ -31,29 +31,34 @@ public class AdminUsersPage {
 
 	}
 
-	public void chooseAdminUserInfo() {
-		adminuserinfo.click();
-	}
+//	public void chooseAdminUserInfo() {
+//		adminuserinfo.click();
+//	}
 
-	public void chooseNewButton() {
+	public AdminUsersPage chooseNewButton() {
 		newbutton.click();
+		return this;
 	}
 
-	public void enterUserName(String usernamename) {
+	public AdminUsersPage enterUserName(String usernamename) {
 		usernamefield.sendKeys(usernamename);
+		return this;
 	}
 
-	public void enterPassword(String userpassword) {
+	public AdminUsersPage enterPassword(String userpassword) {
 		passwordfield.sendKeys(userpassword);
+		return this;
 	}
 
-	public void selectUserType() {
+	public AdminUsersPage selectUserType() {
 		PageUtility page1 = new PageUtility();
 		page1.dropDownByValue(usertype, "staff");
+		return this;
 	}
 
-	public void clickSaveButton() {
+	public AdminUsersPage clickSaveButton() {
 		savebutton.click();
+		return this;
 	}
 
 	public boolean isAlertDisplayed() {

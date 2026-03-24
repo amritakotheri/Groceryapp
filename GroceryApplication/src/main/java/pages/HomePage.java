@@ -23,6 +23,8 @@ public class HomePage {
 	WebElement managecontactinfo;
 	@FindBy(xpath = "//a[@href='https://groceryapp.uniqassosiates.com/admin/list-footertext' and @class='small-box-footer']")
 	WebElement managefootertextinfo;
+	@FindBy(xpath = "//a[@href='https://groceryapp.uniqassosiates.com/admin/list-admin' and @class='small-box-footer']")
+	WebElement adminuserinfo;
 	
 	
 	public HomePage(WebDriver driver) {
@@ -51,6 +53,10 @@ public class HomePage {
 		managefootertextinfo.click();
 		return new ManageFooterTextPage(driver);
 	}
+	public AdminUsersPage chooseAdminUserInfo() {
+		adminuserinfo.click();
+		return new AdminUsersPage(driver);
+	}
 	
 	
 	
@@ -61,5 +67,7 @@ public class HomePage {
 	public void clickOnNewLogout() {
 		logout.click();
 	}
-
+	public boolean isSigninDisplayed() {
+		return signin.isDisplayed();
+	}
 }
