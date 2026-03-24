@@ -23,7 +23,7 @@ public class ManageCategoryTest extends Base {
 		String password = ExcelUtility.getStringData(1, 1, "LoginPage");
 		LoginPage loginpage = new LoginPage(driver);
 		loginpage.enterTheUserName(username).enterThePassword(password);
-	//	loginpage.enterThePassword(password);
+	//loginpage.enterThePassword(password);
 		homepage=loginpage.clickOnTheSignInButton();
 		//ManageCategoryPage managecategorypage = new ManageCategoryPage(driver);
 		FakerUtilities fakerutility=new FakerUtilities();
