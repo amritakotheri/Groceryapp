@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="2" ignored="2" total="5" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-24T11:50:27 IST" name="groceryapp" finished-at="2026-03-24T11:51:22 IST" duration-ms="54429">
+  <suite started-at="2026-03-25T12:26:06 IST" name="groceryapp" finished-at="2026-03-25T12:26:32 IST" duration-ms="26526">
     <groups>
+      <group name="regression">
+        <method signature="LoginTest.verifyTheUserIsAbleToLoginUsingValidCredentials()[pri:0, instance:testscript.LoginTest@2d0399f4]" name="verifyTheUserIsAbleToLoginUsingValidCredentials" class="testscript.LoginTest"/>
+      </group> <!-- regression -->
     </groups>
-    <test started-at="2026-03-24T11:50:27 IST" name="Test" finished-at="2026-03-24T11:51:22 IST" duration-ms="54429">
-      <class name="testscript.AdminUsersTest">
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.AdminUsersTest@368f2016]" started-at="2026-03-24T11:50:28 IST" name="browserInitialization" finished-at="2026-03-24T11:50:34 IST" duration-ms="6104" status="PASS">
+    <test started-at="2026-03-25T12:26:06 IST" name="Test" finished-at="2026-03-25T12:26:32 IST" duration-ms="26526">
+      <class name="testscript.LoginTest">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LoginTest@2d0399f4]" started-at="2026-03-25T12:26:06 IST" name="browserInitialization" finished-at="2026-03-25T12:26:12 IST" duration-ms="6497" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,92 +21,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method retried="true" signature="verifyTheUserIsAbleToGetAdminUserInformation()[pri:0, instance:testscript.AdminUsersTest@368f2016]" started-at="2026-03-24T11:50:34 IST" name="verifyTheUserIsAbleToGetAdminUserInformation" description="This test case verifies that a valid user is able to log in to the application and successfully add a new admin user by providing the required details. It ensures that the system displays a confirmation alert after saving the admin user information." finished-at="2026-03-24T11:50:48 IST" duration-ms="14818" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='alert alert-success alert-dismissible']"}
-  (Session info: chrome=146.0.7680.155)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.38.0', revision: '6b412e825c*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bed3929db749dae99260dab040aace07, findElement {value=//div[@class='alert alert-success alert-dismissible'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.155, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52053}, goog:processID: 21832, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52053/devtoo..., se:cdpVersion: 146.0.7680.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bed3929db749dae99260dab040aace07]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='alert alert-success alert-dismissible']"}
-  (Session info: chrome=146.0.7680.155)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.38.0', revision: '6b412e825c*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bed3929db749dae99260dab040aace07, findElement {value=//div[@class='alert alert-success alert-dismissible'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.155, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52053}, goog:processID: 21832, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52053/devtoo..., se:cdpVersion: 146.0.7680.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bed3929db749dae99260dab040aace07
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
-at pages.AdminUsersPage.isAlertDisplayed(AdminUsersPage.java:60)
-at testscript.AdminUsersTest.verifyTheUserIsAbleToGetAdminUserInformation(AdminUsersTest.java:37)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="verifyTheUserIsAbleToLoginUsingInvalidUsernameInvalidPassword()[pri:0, instance:testscript.LoginTest@2d0399f4]" started-at="2026-03-25T12:26:12 IST" name="verifyTheUserIsAbleToLoginUsingInvalidUsernameInvalidPassword" description="This test case verifies that the application does not allow a user to log in when both the username and password are incorrect. The system should reject the login attempt and display an appropriate error message or alert indicating invalid credentials." finished-at="2026-03-25T12:26:15 IST" duration-ms="2986" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyTheUserIsAbleToGetAdminUserInformation -->
-        <test-method is-config="true" signature="browserQuitAndClose(org.testng.ITestResult)[pri:0, instance:testscript.AdminUsersTest@368f2016]" started-at="2026-03-24T11:50:48 IST" name="browserQuitAndClose" finished-at="2026-03-24T11:50:49 IST" duration-ms="354" status="PASS">
+        </test-method> <!-- verifyTheUserIsAbleToLoginUsingInvalidUsernameInvalidPassword -->
+        <test-method is-config="true" signature="browserQuitAndClose(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@2d0399f4]" started-at="2026-03-25T12:26:15 IST" name="browserQuitAndClose" finished-at="2026-03-25T12:26:15 IST" duration-ms="273" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyTheUserIsAbleToGetAdminUserInformation status=SKIP method=AdminUsersTest.verifyTheUserIsAbleToGetAdminUserInformation()[pri:0, instance:testscript.AdminUsersTest@368f2016] output={null}]]]>
+                <![CDATA[[TestResult name=verifyTheUserIsAbleToLoginUsingInvalidUsernameInvalidPassword status=SUCCESS method=LoginTest.verifyTheUserIsAbleToLoginUsingInvalidUsernameInvalidPassword()[pri:0, instance:testscript.LoginTest@2d0399f4] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuitAndClose -->
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.AdminUsersTest@368f2016]" started-at="2026-03-24T11:50:49 IST" name="browserInitialization" finished-at="2026-03-24T11:50:53 IST" duration-ms="4112" status="PASS">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LoginTest@2d0399f4]" started-at="2026-03-25T12:26:15 IST" name="browserInitialization" finished-at="2026-03-25T12:26:20 IST" duration-ms="4195" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -114,92 +47,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method retried="true" signature="verifyTheUserIsAbleToGetAdminUserInformation()[pri:0, instance:testscript.AdminUsersTest@368f2016]" started-at="2026-03-24T11:50:53 IST" name="verifyTheUserIsAbleToGetAdminUserInformation" description="This test case verifies that a valid user is able to log in to the application and successfully add a new admin user by providing the required details. It ensures that the system displays a confirmation alert after saving the admin user information." finished-at="2026-03-24T11:51:05 IST" duration-ms="12334" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='alert alert-success alert-dismissible']"}
-  (Session info: chrome=146.0.7680.155)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.38.0', revision: '6b412e825c*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e1fe7881b4290fc4893672eaf39d3fdf, findElement {value=//div[@class='alert alert-success alert-dismissible'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.155, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51410}, goog:processID: 22340, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51410/devtoo..., se:cdpVersion: 146.0.7680.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e1fe7881b4290fc4893672eaf39d3fdf]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='alert alert-success alert-dismissible']"}
-  (Session info: chrome=146.0.7680.155)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.38.0', revision: '6b412e825c*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e1fe7881b4290fc4893672eaf39d3fdf, findElement {value=//div[@class='alert alert-success alert-dismissible'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.155, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51410}, goog:processID: 22340, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51410/devtoo..., se:cdpVersion: 146.0.7680.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e1fe7881b4290fc4893672eaf39d3fdf
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
-at pages.AdminUsersPage.isAlertDisplayed(AdminUsersPage.java:60)
-at testscript.AdminUsersTest.verifyTheUserIsAbleToGetAdminUserInformation(AdminUsersTest.java:37)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="verifyTheUserIsAbleToLoginUsingInvalidUsernameValidPassword()[pri:0, instance:testscript.LoginTest@2d0399f4]" started-at="2026-03-25T12:26:20 IST" name="verifyTheUserIsAbleToLoginUsingInvalidUsernameValidPassword" description="This test case verifies that the application does not allow a user to log in when an incorrect (invalid) username is provided along with a valid password. The system should display an appropriate error message or alert indicating unsuccessful login." finished-at="2026-03-25T12:26:21 IST" duration-ms="1081" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyTheUserIsAbleToGetAdminUserInformation -->
-        <test-method is-config="true" signature="browserQuitAndClose(org.testng.ITestResult)[pri:0, instance:testscript.AdminUsersTest@368f2016]" started-at="2026-03-24T11:51:05 IST" name="browserQuitAndClose" finished-at="2026-03-24T11:51:06 IST" duration-ms="360" status="PASS">
+        </test-method> <!-- verifyTheUserIsAbleToLoginUsingInvalidUsernameValidPassword -->
+        <test-method is-config="true" signature="browserQuitAndClose(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@2d0399f4]" started-at="2026-03-25T12:26:21 IST" name="browserQuitAndClose" finished-at="2026-03-25T12:26:21 IST" duration-ms="283" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyTheUserIsAbleToGetAdminUserInformation status=SKIP method=AdminUsersTest.verifyTheUserIsAbleToGetAdminUserInformation()[pri:0, instance:testscript.AdminUsersTest@368f2016] output={null}]]]>
+                <![CDATA[[TestResult name=verifyTheUserIsAbleToLoginUsingInvalidUsernameValidPassword status=SUCCESS method=LoginTest.verifyTheUserIsAbleToLoginUsingInvalidUsernameValidPassword()[pri:0, instance:testscript.LoginTest@2d0399f4] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuitAndClose -->
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.AdminUsersTest@368f2016]" started-at="2026-03-24T11:51:06 IST" name="browserInitialization" finished-at="2026-03-24T11:51:10 IST" duration-ms="3911" status="PASS">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LoginTest@2d0399f4]" started-at="2026-03-25T12:26:21 IST" name="browserInitialization" finished-at="2026-03-25T12:26:25 IST" duration-ms="4125" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -210,92 +73,48 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyTheUserIsAbleToGetAdminUserInformation()[pri:0, instance:testscript.AdminUsersTest@368f2016]" started-at="2026-03-24T11:51:10 IST" name="verifyTheUserIsAbleToGetAdminUserInformation" description="This test case verifies that a valid user is able to log in to the application and successfully add a new admin user by providing the required details. It ensures that the system displays a confirmation alert after saving the admin user information." finished-at="2026-03-24T11:51:21 IST" duration-ms="11875" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='alert alert-success alert-dismissible']"}
-  (Session info: chrome=146.0.7680.155)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.38.0', revision: '6b412e825c*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [aebf90e1ec736c0bf189bd2c06dbbf11, findElement {value=//div[@class='alert alert-success alert-dismissible'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.155, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62108}, goog:processID: 19820, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62108/devtoo..., se:cdpVersion: 146.0.7680.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: aebf90e1ec736c0bf189bd2c06dbbf11]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='alert alert-success alert-dismissible']"}
-  (Session info: chrome=146.0.7680.155)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.38.0', revision: '6b412e825c*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [aebf90e1ec736c0bf189bd2c06dbbf11, findElement {value=//div[@class='alert alert-success alert-dismissible'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.155, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62108}, goog:processID: 19820, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62108/devtoo..., se:cdpVersion: 146.0.7680.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: aebf90e1ec736c0bf189bd2c06dbbf11
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
-at pages.AdminUsersPage.isAlertDisplayed(AdminUsersPage.java:60)
-at testscript.AdminUsersTest.verifyTheUserIsAbleToGetAdminUserInformation(AdminUsersTest.java:37)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="verifyTheUserIsAbleToLoginUsingValidCredentials()[pri:0, instance:testscript.LoginTest@2d0399f4]" started-at="2026-03-25T12:26:25 IST" name="verifyTheUserIsAbleToLoginUsingValidCredentials" description="This test case verifies that the application allows a user to successfully log in when valid username and password are provided. Upon successful authentication, the user should be redirected to the dashboard page." finished-at="2026-03-25T12:26:27 IST" duration-ms="1588" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyTheUserIsAbleToGetAdminUserInformation -->
-        <test-method is-config="true" signature="browserQuitAndClose(org.testng.ITestResult)[pri:0, instance:testscript.AdminUsersTest@368f2016]" started-at="2026-03-24T11:51:21 IST" name="browserQuitAndClose" finished-at="2026-03-24T11:51:22 IST" duration-ms="484" status="PASS">
+        </test-method> <!-- verifyTheUserIsAbleToLoginUsingValidCredentials -->
+        <test-method is-config="true" signature="browserQuitAndClose(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@2d0399f4]" started-at="2026-03-25T12:26:27 IST" name="browserQuitAndClose" finished-at="2026-03-25T12:26:27 IST" duration-ms="231" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyTheUserIsAbleToGetAdminUserInformation status=FAILURE method=AdminUsersTest.verifyTheUserIsAbleToGetAdminUserInformation()[pri:0, instance:testscript.AdminUsersTest@368f2016] output={null}]]]>
+                <![CDATA[[TestResult name=verifyTheUserIsAbleToLoginUsingValidCredentials status=SUCCESS method=LoginTest.verifyTheUserIsAbleToLoginUsingValidCredentials()[pri:0, instance:testscript.LoginTest@2d0399f4] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuitAndClose -->
-      </class> <!-- testscript.AdminUsersTest -->
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LoginTest@2d0399f4]" started-at="2026-03-25T12:26:27 IST" name="browserInitialization" finished-at="2026-03-25T12:26:31 IST" duration-ms="4062" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInitialization -->
+        <test-method signature="verifyTheUserIsAbleToLoginUsingValidUsernameInvalidPassword()[pri:0, instance:testscript.LoginTest@2d0399f4]" started-at="2026-03-25T12:26:31 IST" name="verifyTheUserIsAbleToLoginUsingValidUsernameInvalidPassword" description="This test case verifies that the application prevents login when a correct (valid) username is entered with an incorrect (invalid) password. The system should display an appropriate error message or alert indicating that authentication has failed." finished-at="2026-03-25T12:26:32 IST" duration-ms="875" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheUserIsAbleToLoginUsingValidUsernameInvalidPassword -->
+        <test-method is-config="true" signature="browserQuitAndClose(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@2d0399f4]" started-at="2026-03-25T12:26:32 IST" name="browserQuitAndClose" finished-at="2026-03-25T12:26:32 IST" duration-ms="250" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTheUserIsAbleToLoginUsingValidUsernameInvalidPassword status=SUCCESS method=LoginTest.verifyTheUserIsAbleToLoginUsingValidUsernameInvalidPassword()[pri:0, instance:testscript.LoginTest@2d0399f4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuitAndClose -->
+      </class> <!-- testscript.LoginTest -->
     </test> <!-- Test -->
   </suite> <!-- groceryapp -->
 </testng-results>

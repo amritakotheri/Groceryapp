@@ -31,5 +31,14 @@ public void waitForInvisibilityOfAllElements(WebDriver driver,WebElement element
 	WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(EXPLICITWAIT));
 	wait.until(ExpectedConditions.invisibilityOfAllElements(element));
 }
-
+public void waitForVisibilityOfAllElements(WebDriver driver,WebElement element)
+{
+	WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(EXPLICITWAIT));
+	wait.until(ExpectedConditions.visibilityOf(element));
+}
+public void waitForAlertIsPresent(WebDriver driver)
+{
+	WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(EXPLICITWAIT));
+	wait.until(ExpectedConditions.alertIsPresent());
+}
 }
