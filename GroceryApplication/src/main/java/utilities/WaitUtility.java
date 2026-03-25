@@ -26,4 +26,10 @@ public void waitForElementsSelectionStateToBe(WebDriver driver,WebElement elemen
 	WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(EXPLICITWAIT));
 	wait.until(ExpectedConditions.elementSelectionStateToBe(element, false));
 }
+public void waitForInvisibilityOfAllElements(WebDriver driver,WebElement element)
+{
+	WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(EXPLICITWAIT));
+	wait.until(ExpectedConditions.invisibilityOfAllElements(element));
+}
+
 }

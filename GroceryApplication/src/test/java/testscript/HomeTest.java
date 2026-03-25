@@ -18,9 +18,9 @@ public class HomeTest extends Base {
 		String password = ExcelUtility.getStringData(1, 1, "LoginPage");
 
 		LoginPage loginpage = new LoginPage(driver);
-		loginpage.enterTheUserName(username);
-		loginpage.enterThePassword(password);
-		loginpage.clickOnTheSignInButton();
+		loginpage.enterTheUserName(username).enterThePassword(password);
+		//loginpage.enterThePassword(password);
+		homepage=loginpage.clickOnTheSignInButton();
 
 		//HomePage homepage = new HomePage(driver);
 		homepage.clickOnAdmin();
