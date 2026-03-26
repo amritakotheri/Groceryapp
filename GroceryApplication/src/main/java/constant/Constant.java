@@ -3,6 +3,8 @@ package constant;
 public class Constant {
 	public static final String TESTDATAFILE = System.getProperty("user.dir")
 			+ "\\src\\test\\resources\\groceryapp.xlsx";
+	public static final String CONFIGFILE= System.getProperty("user.dir")
+			+"\\src\\main\\resources\\config.properties";
 	public static final String IMAGEDATAFILE = System.getProperty("user.dir") + "\\src\\test\\resources\\juices.png";
 	public static final String LOGINWITHINVALIDPASSWORD = "homepage is loaded with incorrect password";
 	public static final String LOGINWITHINVALIDUSERNAME = "homepage is loaded with incorrect username";
